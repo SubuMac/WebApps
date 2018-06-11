@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DigiXforce</title>
+
+    <!-- JQuery v2.2.4 -->
+  <script src="jquery-2.2.4.min.js"></script>
+    <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    
+    <!-- Superfish v1.7.9 -->
+  <script src="js/plugins/jquery.superfish.min.js"></script>
+
+    
+    <!-- Main script -->
+  <script src="mymain.js"></script>
+    
+    
+    
+    
+    <script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+    
+    
+$('#myDropdown').on('hide.bs.dropdown', function () {
+    return false;
+});    
+    
+   $('.dropdown-menu').click(function(e) {
+    e.stopPropagation();
+}); 
+    
+ $('#signupform').hide(); 
+    
+$('.switch1,.switch2').click(function(){
+    $('#signupform,#loginform').toggle();
+});    
+    
+});
+        
+
+        
+</script>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="css/bootstrap.css">
+    
+    
+   <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="favicon.ico" />
+    <!-- Bootstrap v3.3.7 -->
+<!--  <link rel="stylesheet" href="css/bootstrap.min.css">-->
+  <!-- Font Awesome 4.7.0 -->
+<!--  <link rel="stylesheet" href="css/font-awesome.min.css">-->
+      <!-- Main style -->
+  <link rel="stylesheet" href="css/style.css">
+
+    
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+    
+    .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+    
+body{
+    
+color:#fff;
+ font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 300;
+/*    background-image: url(img/bg.jpg) ;*/
+    background-attachment: fixed;
+    
+    background-size: cover;
+    
+    }
+    .jumbotron .container{
+        top: 30%;
+        
+    }
+    .navbar{
+        border: none;
+        
+    }
+    .navbar li{
+        color: #fff;
+    }
+button[type=button]:focus{
+	outline:none;}
+#subjects ul{
+	float:left;
+	padding:0px;}
+#subjects li{
+	list-style:none;
+	display:block;
+	padding:10px;
+	font-size:16px; font-weight:500;
+	}
+    input[type=text]{
+       
+        font-size: 18px;
+        border: none;
+    }
+    
+    
+    /*Vido thumb*/
+    
+    .outerpadding{
+    padding:5% 4%;}
+.boximg{
+	position:relative;
+	overflow:hidden;
+	}
+	
+.boximg img{
+		transition:all ease-in 500ms;
+		border:1px solid #fff;
+	}	
+.boximg img:hover{
+	transform:scale(1.3,1.3);
+	cursor:pointer;
+	
+	}	
+	
+.boximg:hover{
+	border:1px solid #fff;
+	}	
+	
+.date{
+	 left: 0;
+    position: absolute;
+    top: 15px;
+	padding:5px;
+	background-color:teal;
+	opacity:0;
+	transition:all ease-in 300ms;
+	
+	}	
+	
+.likebut{
+	  background: none repeat scroll 0 0 teal;
+    height: 25px;
+    padding: 7px;
+    position: absolute;
+    right: 5px;
+    top: 130px;
+    width: 25px;
+	opacity:0.4;
+	transition:all ease-in 300ms;
+	}
+	
+	
+.boximg:hover .date{
+	opacity:1;
+	
+	}	
+.boximg:hover .likebut{
+	opacity:1;
+	
+}
+    
+/*Login CSS*/
+    
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+    #login-dp input[type=text]{
+        font-size: 14px;
+    }
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+    
+    
+    
+
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-default" style="">
+  <div class="container"> 
+
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><span class=""><img src="img/logo_white.png" height="50" style="margin-top: -15px;"></span> </a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myDefaultNavbar1">
+        
+          
+        <!--Menus Code Dropdown-->
+      <ul class="nav navbar-nav">  
+        
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Course<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+          <li class="dropdown-header">Tutor for Student</li>
+            <li><a href="#">Mathmatics</a></li>
+             <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+            <li><a href="#">Find Tutor</a></li>
+			<li class="divider"></li>
+
+            <li class="dropdown-header">Online Help</li>
+            <li><a href="#">Assignment Help</a></li>
+            <li><a href="#">Project Help</a></li>
+            <li><a href="#">Problem Solving Help</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tutor<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+          
+            <li><a href="#">JOB</a></li>
+            <li><a href="#">Get More Student</a></li>
+			<li class="divider"></li>
+
+            <li class="dropdown-header">Online Help</li>
+            <li><a href="#">Online Traning</a></li>
+            <li><a href="#">How to Teach Online</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#">FAQs</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+          
+      </ul>
+        
+        
+        <!--Login Code-->
+        <ul class="nav navbar-nav pull-right">
+      <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-user"></span><b>  &nbsp;Login</b></a>
+              
+              <ul id="login-dp" class="dropdown-menu pull-right " id="myDropdwon">
+			<li id="loginform"> 
+					 <div class="row">
+							<div class="col-md-12">
+								<center>Login via</center>
+								<div class="social-buttons">
+									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+                                <center>or</center>
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> keep me logged-in
+											 </label>
+										</div>
+								 </form>
+							</div>
+							<div class="bottom text-center switch1">
+								<a href="#"><b>Join Us/Sign Up</b></a>
+							</div>
+					 </div>
+				</li>
+                  
+                  
+                  <li id="signupform">
+					 <div class="row">
+							<div class="col-md-12">
+								<center>Sign Up via</center>
+								<div class="social-buttons">
+									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+                                <center>or</center>
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+										</div>
+                                     <div class="form-group">
+											 <label class="sr-only" for="exampleInputName">Name</label>
+											 <input type="text" class="form-control" id="exampleInputName" placeholder="Your Name" required>
+										</div>
+                                     <div class="form-group">
+											 <label class="sr-only" for="exampleInputContact">Name</label>
+											 <input type="text" class="form-control" id="exampleInputContact" placeholder="Mobile No." required>
+										</div>
+                                     
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                            
+										</div>
+                                     
+                                     
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPasswordC">Confirm Password</label>
+											 <input type="password" class="form-control" id="exampleInputPasswordC" placeholder="Confirm Password" required>
+                                            
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+										</div>
+								
+								 </form>
+							</div>
+							<div class="bottom text-center switch2">
+								<a href="#"><b>Sign In</b></a>
+							</div>
+					 </div>
+				</li>
+                  
+			</ul>
+              
+              
+              
+              </li>
+      </ul>
+      
+        
+</div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+    
+  
+        
+        
+        
+        
+        <main class="content-row">
+      <div class="page-title-wrapp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="page-title-01">About Us</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="breadcrumbs">
+                <li class="active">
+                    <span class="glyphicon glyphicon-home"></span>
+                    <a href="index.html">Home</a>
+                </li>
+                <li style="color: black; font: Ariel">About Us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-box-01 padding-top-33 padding-bottom-55">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+  <!--            <div class="contacts_map">
+                <div id="map-canvas"></div>
+              </div>
+  -->          </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="title-02">Get in
+                <span>Touch</span>
+              </h3>
+            </div>
+          </div>
+<!--
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="contact-box">
+                <p>We have world-class, flexible support via live chat, email and skype. We guarantee that you’ll be able to have any issue resolved within 24 hours. You can contact support immediately here. </p>
+                <ul class="contact-box__list">
+                  <li>
+                    <span>Adress:</span> Pune, Maharastra, India.
+                  </li>
+                  <li>
+                    <span>Email:</span>
+                    <a href="mailto:subrat@digixforce.in">subrat@digixforce.in</a>
+                  </li>
+                  <li>
+                    <span>Phones:</span>
+                    <div class="contact-box__phones-box">
+                      <p>774 1050 707</p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <span class="contact-box__item">Find Us on:</span>
+                    <ul class="soc-list-01">
+                      <li>
+                        <a href="#" class="facebook-style">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="twitter-style">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="google-style">
+                          <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="pinterest-style">
+                          <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="reply-form">
+                <div role="form" class="form-in-wrapp" id="form-in-wrapp-f1053-p976-o1" lang="en-US" dir="ltr">
+                  <div class="screen-reader-response"></div>
+                  <div id="note"></div>
+                  <div id="fields">
+                    <form id="ajax-contact-form" action="javascript:void(0);" method="post" novalidate="novalidate" class="reply-form__form">
+                      <div class="reply-form__box-01 name">
+                        <input class="reply-form__name form-in-wrapp-validates-as-required" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="Name *">
+                      </div>
+                      <div class="reply-form__box-01 name">
+                        <input class="reply-form__name form-in-wrapp-validates-as-required" type="text" name="age" aria-required="true" aria-invalid="false" placeholder="Age *">
+                      </div>
+                      <div class="reply-form__box-01 name">
+                        <input class="reply-form__name form-in-wrapp-validates-as-required" type="text" name="phone" aria-required="true" aria-invalid="false" placeholder="Mobile No *">
+                      </div>
+                      <div class="reply-form__box-02 your-email">
+                        <input class="reply-form__email form-in-wrapp-validates-as-required form-in-wrapp-validates-as-email" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email *">
+                      </div>
+                      <div class="reply-form__box-04 your-message">
+                        <textarea class="reply-form__message" name="message" aria-invalid="false" cols="30" rows="10" placeholder="Message..."></textarea>
+                      </div>
+                      <div class="reply-form__box-05">
+                        <button class="btn-01" type="submit">Send message</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </main>
+
+
+
+    
+    
+    
+   
+
+<hr>
+    
+    
+    
+ <section style="background-color: #fff; color: grey; padding: 5% 0%;">
+    
+    </section>    
+    
+<div class="section well" style="color:white;border: none; background-color: darkslategrey; ">
+    <div class="container">
+   	  <div class="row">
+		<div class="col-lg-4 col-md-4">
+            <p class="text-left">WHO WE ARE</p>
+            <p class="text-justify" style="color: gray;">We also provide selected set of experienced Private teachers to teach online. In order for students to experience our service, we provide a free online tutoring session. With a conversion rate of about 95%, we are confident, if we provide you with a tutor, you will be with us for as long as you learn online.</p>
+        </div>
+		<div class="col-lg-4 col-md-4">
+		  <p class="text-left">GET IN TOUCH</p>
+          <address class="text-justify" style="color: gray;">
+  <strong>DigiXForce.</strong><br>
+  Near Akshara School, Tathwade.<br>
+  Pune, 411057<br>
+  <abbr title="Phone">P:</abbr> (+91) 8249068095
+</address>
+</div>
+		<div class="col-lg-4 col-md-4">
+		  <p class="text-left">NEWSLETTER</p>
+            
+          <form class="form-inline">
+    <div class="form-group ">
+<input type="email" class="form-control" style="width: 70%; float: left;" id="exampleInputEmail1" placeholder="Enter email">
+        &nbsp;&nbsp;<button type="submit" class="btn btn-default">Subs
+</button>
+    </div>
+
+</form>
+            <br>
+            <br>
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+		</div>
+</div>
+    </div>
+	</div>
+    <footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © ReBlow Range Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- JQuery v2.2.4 -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+
+  <!-- Superfish v1.7.9 -->
+  <script src="js/plugins/jquery.superfish.min.js"></script>
+
+  <!-- Main script -->
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>

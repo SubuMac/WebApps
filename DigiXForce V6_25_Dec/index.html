@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DigiXforce</title>
+
+   <!-- Owl carousel v2.2.1 -->
+  <script src="js/plugins/jquery.owl.carousel.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+    
+    
+$('#myDropdown').on('hide.bs.dropdown', function () {
+    return false;
+});    
+    
+   $('.dropdown-menu').click(function(e) {
+    e.stopPropagation();
+}); 
+    
+ $('#signupform').hide(); 
+    
+$('.switch1,.switch2').click(function(){
+    $('#signupform,#loginform').toggle();
+}); 
+    
+
+    
+});
+        
+
+        
+</script>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Owl carousel v2.2.1 -->
+  <script src="js/plugins/jquery.owl.carousel.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+    
+    .dropdown-submenu {
+        position: relative;
+    }
+    .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+    
+body{
+    
+color:#fff;
+ font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 300;
+    background-image: url(img/parallax_01.jpg) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    }
+    
+    .navbar{
+        border: none;
+        
+    }
+    .navbar li{
+        color: #fff;
+    }
+button[type=button]:focus{
+	outline:none;}
+#subjects ul{
+	float:left;
+	padding:0px;}
+#subjects li{
+	list-style:none;
+	display:block;
+	padding:10px;
+	font-size:16px; font-weight:500;
+	}
+    input[type=text]{
+       
+        font-size: 18px;
+        border: none;
+    }
+    
+    
+    /*Vido thumb*/
+    
+    .outerpadding{
+    padding:5% 4%;}
+.boximg{
+	position:relative;
+	overflow:hidden;
+	}
+	
+.boximg img{
+		transition:all ease-in 500ms;
+		border:1px solid #fff;
+	}	
+.boximg img:hover{
+	transform:scale(1.3,1.3);
+	cursor:pointer;
+	
+	}	
+	
+.boximg:hover{
+	border:1px solid #fff;
+	}	
+	
+.date{
+	 left: 0;
+    position: absolute;
+    top: 15px;
+	padding:5px;
+	background-color:teal;
+	opacity:0;
+	transition:all ease-in 300ms;
+	
+	}	
+	
+.likebut{
+	  background: none repeat scroll 0 0 teal;
+    height: 25px;
+    padding: 7px;
+    position: absolute;
+    right: 5px;
+    top: 130px;
+    width: 25px;
+	opacity:0.4;
+	transition:all ease-in 300ms;
+	}
+	
+	
+.boximg:hover .date{
+	opacity:1;
+	
+}
+
+.boximg:hover .likebut{
+	opacity:1;	
+}
+
+/*Search bar*/
+
+    
+    
+/*Login CSS*/
+    
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+    #login-dp input[type=text]{
+        font-size: 14px;
+    }
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+    
+    .failed-login {
+        color: crimson;
+        background-color: darkkhaki;
+    }
+    
+.owl-carousel.owl-option-02 {
+  max-width: 765px;
+  max-height: 99px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  padding: 0 80px;
+  position: relative;
+}
+
+.owl-carousel.owl-option-02.owl-loaded {
+  max-height: none;
+  overflow: visible;
+}
+
+.owl-carousel.owl-option-02 .item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.owl-carousel.owl-option-02 .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 0;
+  margin-top: -22px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-carousel.owl-option-02 .owl-prev::before {
+  font-family: 'FontAwesome';
+  content: '\f104';
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-carousel.owl-option-02 .owl-prev:hover {
+  background-color: #fff;
+}
+
+.owl-carousel.owl-option-02 .owl-prev:hover::before {
+  color: #303638;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-carousel.owl-option-02 .owl-prev.disabled {
+  background-color: #fff;
+}
+
+.owl-carousel.owl-option-02 .owl-prev.disabled::before {
+  color: #303638;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-carousel.owl-option-02 .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  margin-top: -22px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-carousel.owl-option-02 .owl-next::before {
+  font-family: 'FontAwesome';
+  content: '\f105';
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-carousel.owl-option-02 .owl-next:hover {
+  background-color: #fff;
+}
+
+.owl-carousel.owl-option-02 .owl-next:hover::before {
+  color: #303638;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-carousel.owl-option-02 .owl-next.disabled {
+  background-color: #fff;
+}
+
+.owl-carousel.owl-option-02 .owl-next.disabled::before {
+  color: #303638;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+  
+  @media only screen and (max-width: 640px)
+/*style.css:10395*/
+.owl-carousel.owl-option-02 .owl-next {
+    position: static;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin: 0 10px;
+}
+  
+  .owl-option-02__box-01 {
+  background-color: #fff;
+  width: 99px;
+  height: 99px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.owl-option-02__box-01:hover {
+  background-color: #a7ce4e;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-option-02__box-01:hover .owl-option-02__title {
+  color: #fff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-option-02__box-01:hover .hov-img-01 {
+  background: url("../img/icon/icon_01.png") no-repeat center top;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-option-02__box-01:hover .hov-img-02 {
+  background: url("../img/icon/icon_02.png") no-repeat center top;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-option-02__box-01:hover .hov-img-03 {
+  background: url("../img/icon/icon_03.png") no-repeat center top;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-option-02__box-01:hover .hov-img-04 {
+  background: url("../img/icon/icon_04.png") no-repeat center top;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-option-02__box-01:hover .hov-img-05 {
+  background: url("../img/icon/icon_05.png") no-repeat center top;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+  .owl-option-02__img-wrapp {
+  display: inline-block;
+  vertical-align: top;
+}
+    .owl-option-02__title {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #303638;
+  font-weight: 400;
+  margin: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.hov-img-01 {
+  width: 35px;
+  height: 35px;
+  background: url("../img/icon/icon_01.png") no-repeat center bottom;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.hov-img-02 {
+  width: 35px;
+  height: 35px;
+  background: url("../img/icon/icon_02.png") no-repeat center bottom;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.hov-img-03 {
+  width: 37px;
+  height: 35px;
+  background: url("../img/icon/icon_03.png") no-repeat center bottom;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.hov-img-04 {
+  width: 37px;
+  height: 35px;
+  background: url("../img/icon/icon_04.png") no-repeat center bottom;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.hov-img-05 {
+  width: 35px;
+  height: 35px;
+  background: url("../img/icon/icon_05.png") no-repeat center bottom;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+    
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-default" style="" background-image="none">
+  <div class="container"> 
+
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><span class=""><img src="img/logo_white.png" height="50" style="margin-top: -15px;"></span> </a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myDefaultNavbar1">
+        
+          
+        <!--Menus Code Dropdown-->
+      <ul class="nav navbar-nav">  
+        
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Courses<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+<!--          <li class="dropdown-header">Tutor for Student</li>-->
+              
+            <li><a href="#"></a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Achademic <span class="fa fa-caret-right"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">Physics</a></li>
+          <li><a tabindex="-1" href="#">Chemistry</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Mathmatics <span class="fa fa-caret-right"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Algebra</a></li>
+              <li><a href="#">Calculus and analysis</a></li>
+              <li><a href="#">Geometry</a></li>
+              <li><a href="#">Dynamical systems and differential equations.</a></li>
+              <li><a href="#">Custom Course</a></li>
+                
+            </ul>
+          </li>
+        </ul>
+      </li>
+              
+              <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Programming Languages <span class="fa fa-caret-right"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">C</a></li>
+          
+          <li class="dropdown-submenu">
+            <a class="test" href="#">C++ <span class="fa fa-caret-right"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Advanced C++</a></li>
+              <li><a href="#">C++11/14</a></li>
+              <li><a href="#">VC++ MFC</a></li>
+              <li><a href="#">ATL/COM</a></li>
+              <li class="alert alert-success"><strong><a href="#">Customize</a> </strong>  </li>                
+                
+            </ul>
+              
+          </li>
+            
+            
+          
+            <li class="dropdown-submenu">
+            <a class="test" href="#">Website Developement <span class="fa fa-caret-right"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">HTML rahul</a></li>
+              <li><a href="#">Java Script</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Angular JS</a></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li class="alert alert-success"><strong><a href="#">Customize</a> </strong>  </li>                
+                
+            </ul>
+          </li>
+          
+            <li><a tabindex="-1" href="#">Java</a></li>
+            <li><a tabindex="-1" href="#">C#.net</a></li>
+            <li><a tabindex="-1" href="#">ASP.net</a></li>
+            <li><a tabindex="-1" href="#">C++</a></li>
+            <li><a tabindex="-1" href="#">C++</a></li>
+            
+            
+        </ul>
+      </li>
+
+              <li class="dropdown-submenu">
+            <a class="test" href="#">Linux Admin<span class="fa fa-caret-right"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Baisc Linux Administration</a></li>
+              <li><a href="#">Advanced Linux</a></li>
+          
+                
+            </ul>
+              
+          </li>
+              
+			<li class="divider"></li>
+
+<!--            <li class="dropdown-header">Online Help</li>-->
+            <li><a href="#">Assignment Help</a></li>
+            <li><a href="#">Project Help</a></li>
+            <li><a href="#">Problem Solving Help</a></li>
+          </ul>
+            
+        </li>
+        
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Developement<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+          
+            <li><a href="#">Website</a></li>
+            <li><a href="#">Android</a></li>
+             <li><a href="#">IOS </a></li>
+              <li><a href="#">Desktop App</a></li>
+              
+			<li class="divider"></li>
+
+<!--            <li class="dropdown-header">Online Help</li>-->
+            <li><a href="#">Student's Project</a></li>
+          </ul>
+        </li>
+          
+        <li class="dropdown"> <a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">Jobs<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+          
+            <li><a href="#">Tutor</a></li>
+            <li><a href="#">Developer</a></li>
+             <li><a href="#">Part-time Contributor </a></li>
+			<li class="divider"></li>
+
+<!--            <li class="dropdown-header">Online Help</li>-->
+            <li><a href="#">Our Methodology</a></li>
+            <li><a href="#">How to Teach Online</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#">FAQs</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+        
+        
+        <!--Login Code-->
+        <ul class="nav navbar-nav pull-right">
+      <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-user"></span><b>  &nbsp;Login</b></a>
+              
+              <ul id="login-dp" class="dropdown-menu pull-right " id="myDropdwon">
+			<li id="loginform"> 
+					 <div class="row">
+							<div class="col-md-12">
+								<center>Login via</center>
+								<div class="social-buttons">
+									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+                                <center>or</center>
+								 <form class="form" role="form" method="post" action="login.php" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" name="email" placeholder="Email address" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2" name="pass" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                            <div class="failed-login">
+                                                
+                       
+                                            </div>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> keep me logged-in
+											 </label>
+										</div>
+								 </form>
+							</div>
+							<div class="bottom text-center switch1">
+								<a href="#"><b>Join Us/Sign Up</b></a>
+							</div>
+					 </div>
+				</li>
+                  
+                  
+                  <li id="signupform">
+					 <div class="row">
+							<div class="col-md-12">
+								<center>Sign Up via</center>
+								<div class="social-buttons">
+									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+                                <center>or</center>
+								 <form class="form" role="form" method="post" action="registration.php" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" name="email" placeholder="Email address" required>
+										</div>
+                                     <div class="form-group">
+											 <label class="sr-only" for="exampleInputName">Name</label>
+											 <input type="text" class="form-control" id="exampleInputName" name="name" placeholder="Your Name" required>
+										</div>
+                                     <div class="form-group">
+											 <label class="sr-only" for="exampleInputContact">Name</label>
+											 <input type="text" class="form-control" id="exampleInputContact" name="phone" placeholder="Mobile No." required>
+										</div>
+                                     
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2" name="pass1" placeholder="Password" required>
+                                            
+										</div>
+                                     
+                                     
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPasswordC">Confirm Password</label>
+											 <input type="password" class="form-control" id="exampleInputPasswordC" placeholder="Confirm Password" required>
+                                            
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+										</div>
+								
+								 </form>
+							</div>
+							<div class="bottom text-center switch2">
+								<a href="#"><b>Sign In</b></a>
+							</div>
+					 </div>
+				</li>
+                  
+			</ul>
+              
+              
+              
+              </li>
+      </ul>
+      
+    
+</div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<section>
+  
+    <div class="container-fluid" style="background-color: transparent;background-image: url(img/bg.jpg) ;   background-attachment: fixed;
+    
+    background-size: cover;  height: 100vh; background-position: center;">
+           <div class="row" style="margin-top: 10%;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+               <p style="font-size: 33px; font-weight: 100;">A Training and Development Centre</p>
+               </div>
+        </div>
+       <div class="row"  >
+           <!--TODO ()--> 
+           <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"><!--EEVENT--></div>
+      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10" style="text-align: center;">
+          
+          <form class="form-inline">
+          
+           <input type="text" class="form-control" placeholder="What is in Your Mind..!" style="width: 90%; max-width: 580px; display: inline-block;height: 40px;   border-radius: 20px 20px 20px 20px; ">
+               
+              <button type="submit" class="btn btn-primary float-right " style="height: 40px; display: inline-block; border: none; text-transform: uppercase; background: #a3ce4e; border-radius: 20px 20px 20px 20px; margin: 2% 0%; "><span class="glyphicon glyphicon-search"></span></button>
+            
+         </form>
+          
+           </div>
+        <!--TODO ()-->   
+           <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"><!--ADs--></div>
+          
+
+      </div>   
+<!--
+        <div class="row">
+        <div class="col-xs12">
+            <p style="text-align: center; font-weight: 300; font-size: 50px; margin-top: 10%;">We Know What You Learn..!!</p>
+            </div>
+            
+            
+            
+        </div>
+-->
+        <!-- Carousel  Subart -->
+<!--
+      <div calss="row"></div>
+      <div calss="row"></div>
+-->
+        <div class="row" style="margin-top: 2%;">
+              
+            <div class="col-xs-12 text-center">
+              <div class="carousel slide owl-carousel owl-option-02" id="my_carousel" data-ride="carousel" data-interval="4000">
+                <div class="owl-stage-outer"></div>
+                
+                 <div class="carousel-inner">
+               
+                  <div class="item active" >
+                  <a href="c_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-01"></div>
+                    <h3 class="owl-option-02__title">
+                      C
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="cpp_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-02"></div>
+                    <h3 class="owl-option-02__title">
+                      C++
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="cpp11_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-03"></div>
+                    <h3 class="owl-option-02__title">
+                      C++11/14/17
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="vcpp_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-04"></div>
+                    <h3 class="owl-option-02__title">
+                      VC++ MFC
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="com_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-05"></div>
+                    <h3 class="owl-option-02__title">
+                      ATL/COM
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="Java_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-01"></div>
+                    <h3 class="owl-option-02__title">
+                      Core Java
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="cs_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-02"></div>
+                    <h3 class="owl-option-02__title">
+                      C#.net
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="python_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-03"></div>
+                    <h3 class="owl-option-02__title">
+                      Python
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="dp_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-04"></div>
+                    <h3 class="owl-option-02__title">
+                      Design Pattern C++
+                    </h3>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="custom_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-05"></div>
+                    <h3 class="owl-option-02__title">
+                      Custom Courses
+                    </h3>
+                  </a>
+                </div>
+				<div class="item">
+                  <a href="math_course.html" class="owl-option-02__box-01">
+                    <div class="owl-option-02__img-wrapp hov-img-05"></div>
+                    <h3 class="owl-option-02__title">
+                      Mathematics
+                    </h3>
+                  </a>
+                </div>
+              </div>
+              </div><!-- Carousel-Inner End-->
+              <a class ="left carousel-control" href="#my_carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              
+              <a class ="right carousel-control" href="#my_carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+              
+              
+            </div>
+          </div>
+        <!-- end carasol Subrat . -->
+        
+        <div class="row  text-center">
+            <br>
+            <h3>Events</h3>
+        <div class="col-xs-12">
+            <h4>Event 1 | 21<sup>st</sup> Dec 2017 | 09:00 AM IST</h4>
+            </div>            
+        </div>
+    </div>
+  
+</section>
+<!--<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>Our Providing Subjects</h1>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+    <div class="container-fluid " style="padding: 2% 2%; background-color: #fff;">
+<div class="row">
+  
+  <div class="row" style="font-size: 30px; color: #303638; text-align: center;" >Training <strong style="font-weight: 500; color: #303638;">Samples</strong></div>
+     <br>
+    
+  <div class="col-lg-3">
+     <div class="panel">
+        <div class="panel-heading" style="background-color:teal;color:#fff;"><strong>C++ Event</strong></div>
+        <div class="panel-body" style="background-color:#000;color:#fff; box-shadow:0 -12px 13px teal inset;">
+        
+        <div class="boximg embed-responsive embed-responsive-16by9 ">
+         <iframe src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+         <span class="label label-danger date">14 December 2017</span>
+         <span class="likebut glyphicon glyphicon-tag"></span>
+         </div>
+         
+         
+   <br>
+        <p class="pull-left">C++ Demo Content<br>
+           <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+            <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+             <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+               <span class="glyphicon glyphicon-star-empty" style="font-size:18px;"></span>
+        </p>
+     
+        <span class="badge pull-right" style="background-color:teal">25</span>
+      </div>
+     </div>
+  </div>
+  <div class="col-lg-3">
+     <div class="panel">
+        <div class="panel-heading" style="background-color:teal;color:#fff;"><strong>Linux Administration Demo</strong></div>
+        <div class="panel-body" style="background-color:#000;color:#fff; box-shadow:0 -12px 13px teal inset;">
+        
+        <div class="boximg">
+<!--         <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52c470899a2e1_1.JPG" class="img-responsive">-->
+<!--             <img src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" class="img-responsive">-->
+            
+<!--            <iframe src="https://youtu.be/bydMTPYOYME" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>-->
+            <iframe src="https://www.youtube.com/embed/bydMTPYOYME" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            
+         <span class="label label-danger date">14 October 2017</span>
+         <span class="likebut glyphicon glyphicon-tag"></span>
+         </div>
+         
+         
+   <br>
+        <p class="pull-left">Linux Admin Course Content<br>
+           <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+            <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+             <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+               <span class="glyphicon glyphicon-star-empty" style="font-size:18px;"></span>
+        </p>
+     
+        <span class="badge pull-right" style="background-color:teal">25</span>
+      </div>
+     </div>
+  </div>
+  <div class="col-lg-3">
+     <div class="panel">
+        <div class="panel-heading" style="background-color:teal;color:#fff;"><strong>C++ IDE(XCODE)</strong></div>
+        <div class="panel-body" style="background-color:#000;color:#fff; box-shadow:0 -12px 13px teal inset;background-image: linear-gradient();">
+        
+        <div class="boximg">
+<!--         <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52c470899a2e1_1.JPG" class="img-responsive">-->
+            <iframe src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+         <span class="label label-danger date">14 October 2017</span>
+         <span class="likebut glyphicon glyphicon-tag"></span>
+         </div>
+         
+         
+   <br>
+        <p class="pull-left">Program C++ in MAC OS<br>
+           <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+            <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+             <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+               <span class="glyphicon glyphicon-star-empty" style="font-size:18px;"></span>
+        </p>
+     
+        <span class="badge pull-right" style="background-color:teal">25</span>
+      </div>
+     </div>
+  </div>
+  <div class="col-lg-3">
+     <div class="panel">
+        <div class="panel-heading" style="background-color:teal;color:#fff;"><strong>C++ IDE(Visual Studio)</strong></div>
+        <div class="panel-body" style="background-color:#000;color:#fff; box-shadow:0 -12px 13px teal inset;">
+        
+        <div class="boximg">
+<!--         <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52c470899a2e1_1.JPG" class="img-responsive">-->
+         <span class="label label-danger date">14 October 2017</span>
+         <span class="likebut glyphicon glyphicon-tag"></span>
+            <iframe src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+         </div>
+         
+         
+   <br>
+        <p class="pull-left">Program C++ in Windows<br>
+           <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+            <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+             <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+               <span class="glyphicon glyphicon-star-empty" style="font-size:18px;"></span>
+        </p>
+     
+        <span class="badge pull-right" style="background-color:teal">25</span>
+      </div>
+     </div>
+  </div>
+ </div>
+
+</div>
+
+    
+    <!-- Subrat Added -->
+    <div class="container-fluid" style="padding: 2% 2%; background-color: #f7f7f7;">
+    
+  
+  <div class="row" style="font-size: 30px; color: #303638; text-align: center;" > <strong style="font-weight: 500; color: #303638;">Developement </strong>Work</div>
+     
+    <br>
+  <div class="col-lg-3">
+     <div class="panel">
+        <div class="panel-heading" style="background-color:teal;color:#fff;"><strong>C++ Event</strong></div>
+        <div class="panel-body" style="background-color:#000;color:#fff; box-shadow:0 -12px 13px teal inset;">
+        
+        <div class="boximg embed-responsive embed-responsive-16by9 ">
+         <iframe src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+         <span class="label label-danger date">14 December 2017</span>
+         <span class="likebut glyphicon glyphicon-tag"></span>
+         </div>
+         
+         
+   <br>
+        <p class="pull-left">C++ Demo Content<br>
+           <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+            <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+             <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+               <span class="glyphicon glyphicon-star-empty" style="font-size:18px;"></span>
+        </p>
+     
+        <span class="badge pull-right" style="background-color:teal">25</span>
+      </div>
+     </div>
+  </div>
+  <div class="col-lg-3">
+     <div class="panel">
+        <div class="panel-heading" style="background-color:teal;color:#fff;"><strong>C++11</strong></div>
+        <div class="panel-body" style="background-color:#000;color:#fff; box-shadow:0 -12px 13px teal inset;">
+        
+        <div class="boximg">
+<!--         <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52c470899a2e1_1.JPG" class="img-responsive">-->
+<!--             <img src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" class="img-responsive">-->
+            
+            <iframe src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+         <span class="label label-danger date">14 October 2017</span>
+         <span class="likebut glyphicon glyphicon-tag"></span>
+         </div>
+         
+         
+   <br>
+        <p class="pull-left">Advanced C++<br>
+           <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+            <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+             <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+               <span class="glyphicon glyphicon-star-empty" style="font-size:18px;"></span>
+        </p>
+     
+        <span class="badge pull-right" style="background-color:teal">25</span>
+      </div>
+     </div>
+  </div>
+  <div class="col-lg-3">
+     <div class="panel">
+        <div class="panel-heading" style="background-color:teal;color:#fff;"><strong>C++ IDE(XCODE)</strong></div>
+        <div class="panel-body" style="background-color:#000;color:#fff; box-shadow:0 -12px 13px teal inset;">
+        
+        <div class="boximg">
+<!--         <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52c470899a2e1_1.JPG" class="img-responsive">-->
+            <iframe src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+         <span class="label label-danger date">14 October 2017</span>
+         <span class="likebut glyphicon glyphicon-tag"></span>
+         </div>
+         
+         
+   <br>
+        <p class="pull-left">Program C++ in MAC OS<br>
+           <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+            <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+             <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+               <span class="glyphicon glyphicon-star-empty" style="font-size:18px;"></span>
+        </p>
+     
+        <span class="badge pull-right" style="background-color:teal">25</span>
+      </div>
+     </div>
+  </div>
+  <div class="col-lg-3">
+     <div class="panel">
+        <div class="panel-heading" style="background-color:teal;color:#fff;"><strong>C++ IDE(Visual Studio)</strong></div>
+        <div class="panel-body" style="background-color:#000;color:#fff; box-shadow:0 -12px 13px teal inset;">
+        
+        <div class="boximg">
+<!--         <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52c470899a2e1_1.JPG" class="img-responsive">-->
+         <span class="label label-danger date">14 October 2017</span>
+         <span class="likebut glyphicon glyphicon-tag"></span>
+            <iframe src="https://www.youtube.com/embed/ykAu6Cf3ijE?rel=0" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+         </div>
+         
+         
+   <br>
+        <p class="pull-left">Program C++ in Windows<br>
+           <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+            <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+             <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:18px;"></span>
+               <span class="glyphicon glyphicon-star-empty" style="font-size:18px;"></span>
+        </p>
+     
+        <span class="badge pull-right" style="background-color:teal">25</span>
+      </div>
+     </div>
+  </div>
+ </div>
+
+<section>
+	<div class="container-fluid"  style="background-color: #fff; color: black; padding: 2% 5%; ">
+		
+        <div class="row">
+        	<div class="col-sm-4 col-md-4 col-lg-4 " style="font-size:16px; margin:10px 0px; ">
+                <div style="display: inline-block;">
+                <img src="img/logo1.png" alt="logo1" widht="50" height="50" style="display: inline-block; float:left;">
+                <p style="float: right; text-align: justify; width:80%; ">
+            <b>Train Your Brain</b><br>
+                <ab style="color: darkgrey;">Take a quiz in every week.Visit our website in every weekend.
+                    <br>(Applicable for non registered users also)</ab>
+            	</p>
+                    </div>
+            </div>
+            
+            
+            
+       <div class="col-sm-4 col-md-4 col-lg-4 " style="font-size:16px; margin:10px 0px; ">
+                <div style="display: inline-block;">
+                <img src="img/logo2.png" alt="logo1" widht="50" height="50" style="display: inline-block; float:left;">
+                <p style="float: right; text-align: justify; width:80%; ">
+            <b>Certifications</b><br>
+                    <ab style="color: darkgrey;">
+                        Get Certified in<br> C/C++/VC++/C#.net/Python/Java.</ab>
+            	</p>
+                    </div>
+            </div>
+            
+            
+            <div class="col-sm-4 col-md-4 col-lg-4" style="font-size:16px; margin:10px 0px; ">
+                <div style="display: inline-block;">
+                <img src="img/logo3.png" alt="logo1" widht="50" height="50" style="display: inline-block; float:left;">
+                <p style="float: right; text-align: justify; width:80%; ">
+            <b>Video Lessons</b><br><ab style="color: darkgrey;">
+                    Teach yourself from our recorded<br> videoes, if you miss some of the classes or want to revise your skill.</ab>
+            	</p>
+                </div>
+            </div>
+        
+        </div>
+
+	</div>
+</section>
+<hr>
+    
+    
+    
+   
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p style="font-size:45px;  font-family: 'Montserrat', 'Arial', sans-serif; ">Trusted by Over <b>6000+</b> Students</p>
+        <p style="font-size:30px; font-family: 'Montserrat', 'Arial', sans-serif; ">We have a fully qualified and very well educated teaching staff, continuous student counseling, and a very effective and enthusiastic student support staff.</p>
+		<button type="button" class="btn btn-success" style="height: 40px; display: inline-block; border: none; text-transform: uppercase; background: #a3ce4e; border-radius: 20px 20px 20px 20px; ">Get in touch</button>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+    
+    
+    
+ <section style="background-color: #fff; color: grey; padding: 5% 0%;">
+    <div class="container">
+        <div class="row" style="font-size: 30px; color: #303638; text-align: center;" >Our upcoming <strong style="font-weight: 500; color: #303638;">Cources</strong></div>
+     <div class="row" style="margin: 20px 0px;">
+        <div class="col-lg-3">
+         <div class="card">
+
+    <!--Card image-->
+    <img class="img-fluid" style="width: 100%; height: 100%;" src="img/1.jpg" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Core Java</h4>
+        <!--Text-->
+<!--        <p class="card-text" text-color="RED">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--        <a href="#" class="btn btn-primary">Button</a>-->
+    </div>
+
+</div>
+<!--/.Card-->
+         </div>
+         
+         <div class="col-lg-3">
+         <div class="card">
+
+    <!--Card image-->
+    <img class="img-fluid" style="width: 100%; height: 100%;" src="img/product_img-02.jpg" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">C#.net</h4>
+<!--
+        Text
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Button</a>
+-->
+    </div>
+
+</div>
+<!--/.Card-->
+         </div>
+         
+         
+         
+         <div class="col-lg-3">
+         <div class="card">
+
+    <!--Card image-->
+    <img class="img-fluid" style="width: 100%; height: 100%;" src="img/product_img-01.jpg" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">ASP.net</h4>
+        <!--Text-->
+<!--        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--        <a href="#" class="btn btn-primary">Button</a>-->
+    </div>
+
+</div>
+<!--/.Card-->
+         </div>
+         
+         
+         
+         
+         <div class="col-lg-3">
+         <div class="card">
+
+    <!--Card image-->
+    <img class="img-fluid" style="width: 100%; height: 100%;" src="img/product_img-04.jpg" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Web Designing</h4>
+        <!--Text-->
+<!--        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--        <a href="#" class="btn btn-primary">Button</a>-->
+    </div>
+
+</div>
+<!--/.Card-->
+         </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-3">
+         <div class="card">
+
+    <!--Card image-->
+    <img class="img-fluid" style="width: 100%; height: 100%;" src="img/product_img-05.jpg" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">PHP</h4>
+        <!--Text-->
+<!--        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--        <a href="#" class="btn btn-primary">Button</a>-->
+    </div>
+
+</div>
+<!--/.Card-->
+         </div>
+         
+         <div class="col-lg-3">
+         <div class="card">
+
+    <!--Card image-->
+    <img class="img-fluid" style="width: 100%; height: 100%;" src="img/product_img-06.jpg" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">AngularJS</h4>
+        <!--Text-->
+<!--        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--        <a href="#" class="btn btn-primary">Button</a>-->
+    </div>
+
+</div>
+<!--/.Card-->
+         </div>
+         
+         
+         
+         <div class="col-lg-3">
+         <div class="card">
+
+    <!--Card image-->
+    <img class="img-fluid" style="width: 100%; height: 100%;" src="img/product_img-07.jpg" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">HTML</h4>
+        <!--Text-->
+<!--        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--        <a href="#" class="btn btn-primary">Button</a>-->
+    </div>
+
+</div>
+<!--/.Card-->
+         </div>
+        
+         <div class="col-lg-3">
+         <div class="card">
+
+    <!--Card image-->
+    <img class="img-fluid" style="width: 100%; height: 100%;" src="img/product_img-08.jpg" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">VC++ COM</h4>
+        <!--Text-->
+<!--        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--        <a href="#" class="btn btn-primary">Button</a>-->
+    </div>
+
+</div>
+<!--/.Card-->
+         </div>
+        </div>
+     </div>
+    </section>    
+    
+<div class="section" style="color:white; padding: 2% 0%; border: none; background-color: darkslategrey; ">
+    <div class="container">
+   	  <div class="row">
+		<div class="col-lg-4 col-md-4">
+            <p class="text-left">WHO WE ARE</p>
+            <p class="text-justify" style="color: gray;">We also provide selected set of experienced Private teachers to teach online. In order for students to experience our service, we provide a free online tutoring session. With a conversion rate of about 95%, we are confident, if we provide you with a tutor, you will be with us for as long as you learn online.</p>
+        </div>
+		<div class="col-lg-4 col-md-4">
+		  <p class="text-left">GET IN TOUCH</p>
+          <address class="text-justify" style="color: gray;">
+  <strong>DigiXForce.</strong><br>
+  Near Akshara School, Tathwade.<br>
+  Pune, 411033, MS<br>
+  <abbr title="Phone">P:</abbr> (+91) 8249068095
+</address>
+</div>
+		<div class="col-lg-4 col-md-4">
+		  <p class="text-left">NEWSLETTER</p>
+            
+          <form class="form-inline">
+    <div class="form-group ">
+<input type="email" class="form-control" style="width: 70%; float: left;" id="exampleInputEmail1" placeholder="Enter email">
+        &nbsp;&nbsp;<button type="submit" class="btn btn-default">Subs
+</button>
+    </div>
+
+</form>
+            <br>
+            <br>
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+		</div>
+</div>
+    </div>
+	</div>
+    <footer class="text-center" style="background-color: #fff; color: cadetblue;" >
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p style="padding: 1% 0%;">Copyright©2017 
+            <a href="index.html">
+            <strong>DigiXForce.</strong></a>
+                               All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+    
+    
+</html>
